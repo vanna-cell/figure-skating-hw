@@ -51,8 +51,14 @@ case "$1" in
         echo "Содержимое /data изнутри контейнера аналитика:"
         docker run --rm -v "%cd%/data:/data" --entrypoint /bin/sh reporter-image -c "ls -la /data"
         ;;
+    report_server)
+        echo "Запуск веб-сервера для report.html..."
+        docker run --rm -d -p 8080:80 -v "%cd%/data:/usr/share/nginx/html:ro" --name report-server nginx:alpine
+        echo "Сервер запущен. Откройте http://localhost:8080/report.html"
+        echo "Для остановки сервера выполните: docker stop report-server"
+        ;;
     *)
-        echo "Использование: run.sh {build_generator|run_generator|create_local_data|build_reporter|run_reporter|structure|clear_data|inside_generator|inside_reporter}"
+        echo "Использование: run.sh {build_generator|run_generator|create_local_data|build_reporter|run_reporter|structure|clear_data|inside_generator|inside_reporter|report_server}"
         exit 1
         ;;
 esac
