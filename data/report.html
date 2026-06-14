@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Отчёт</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; max-width: 900px; margin: auto; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 2rem; }
+    th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }
+    th { background: #f0f0f0; }
+    h1 { color: #333; }
+    h2 { color: #555; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <h1>Отчёт по данным</h1>
+  <p>Всего строк: <strong>50</strong></p>
+  
+  <h2>Числовые колонки</h2>
+  <table>
+    <thead>
+      <tr><th>Колонка</th><th>Кол-во</th><th>Min</th><th>Max</th><th>Среднее</th></tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td>base_value</td>
+    <td>50</td>
+    <td>2.20</td>
+    <td>15.30</td>
+    <td>8.11</td>
+  </tr>
+  <tr>
+    <td>success_rate</td>
+    <td>50</td>
+    <td>40.60</td>
+    <td>94.60</td>
+    <td>71.66</td>
+  </tr>
+  <tr>
+    <td>typical_goe</td>
+    <td>50</td>
+    <td>-2.90</td>
+    <td>4.80</td>
+    <td>0.57</td>
+  </tr></tbody>
+  </table>
+  
+  <h2>Колонка: element_name</h2>
+  <table>
+    <thead><tr><th>Значение</th><th>Кол-во</th></tr></thead>
+    <tbody><tr><td>Комбо-вращение</td><td>6</td></tr><tr><td>Вращение стоя</td><td>5</td></tr><tr><td>Четверной риттбергер</td><td>4</td></tr><tr><td>Тройной аксель</td><td>3</td></tr><tr><td>Заход на аксель</td><td>3</td></tr><tr><td>Каскад 3+3</td><td>3</td></tr><tr><td>Дорожка шагов</td><td>3</td></tr><tr><td>Вращение либела</td><td>3</td></tr><tr><td>Четверной флип</td><td>3</td></tr><tr><td>Тройной флип</td><td>3</td></tr><tr><td>Тройной риттбергер</td><td>3</td></tr><tr><td>Каскад 4+3</td><td>3</td></tr><tr><td>Хореографическая дорожка</td><td>2</td></tr><tr><td>Четверной сальхов</td><td>2</td></tr><tr><td>Тройной тулуп</td><td>1</td></tr><tr><td>Тройной лутц</td><td>1</td></tr><tr><td>Тройной сальхов</td><td>1</td></tr><tr><td>Четверной лутц</td><td>1</td></tr></tbody>
+  </table>
+  <h2>Колонка: element_type</h2>
+  <table>
+    <thead><tr><th>Значение</th><th>Кол-во</th></tr></thead>
+    <tbody><tr><td>прыжок</td><td>26</td></tr><tr><td>вращение</td><td>11</td></tr><tr><td>каскад</td><td>9</td></tr><tr><td>дорожка шагов</td><td>4</td></tr></tbody>
+  </table>
+  <h2>Колонка: difficulty_level</h2>
+  <table>
+    <thead><tr><th>Значение</th><th>Кол-во</th></tr></thead>
+    <tbody><tr><td>2</td><td>11</td></tr><tr><td>3</td><td>11</td></tr><tr><td>4</td><td>11</td></tr><tr><td>B</td><td>11</td></tr><tr><td>1</td><td>6</td></tr></tbody>
+  </table>
+  <h2>Колонка: is_quad</h2>
+  <table>
+    <thead><tr><th>Значение</th><th>Кол-во</th></tr></thead>
+    <tbody><tr><td>нет</td><td>37</td></tr><tr><td>да</td><td>13</td></tr></tbody>
+  </table>
+</body>
+</html>
